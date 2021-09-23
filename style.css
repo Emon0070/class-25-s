@@ -1,0 +1,230 @@
+
+
+body,h1,h2,h3,h4,h5,h6,p,span,a,input,button{
+    font-family: 'Spartan', sans-serif;
+}
+.web-bg{background: #f6f9fc;}
+.price-caption{}
+.price-caption h6 {
+    font-weight: 500;
+    color: #0d6efd;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.price-caption h2{
+    margin-bottom: 50px;
+    position: relative;
+font-weight: 700;}
+.price-caption h2::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    height: 2px;
+    width: 50px;
+    background: #0d6efd;
+}
+.price-caption p{
+    color: #989ea5 !important;
+    font-size: 15px;
+    margin-bottom: 80px;
+}
+
+/* Hover */
+
+.price-item:hover  .price-heading{
+    color: #fff;
+}
+.price-item:hover{
+    background: #0d6efd !important;
+
+}
+.price-item:hover ul li{
+    color: #fff !important;
+}
+.price-item:hover .price-btn{
+    background: #fff;
+    color: #0d6efd;
+}
+.price-btn:hover::after{
+    background: #0d6efd !important;
+    color: #fff;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+  
+}
+.price-btn:hover{
+    color: #fff !important;
+}
+/* item */
+.price-item{ transition: .5s;}
+.price-item li{
+    color: #8c8c9e;
+    font-size: 15px;
+    padding: 10px 0;
+    /* margin-top: 20px; */
+    transition: .5s;
+
+}
+.price-btn{
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  border: none;
+}
+.price-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #0d6efd;
+    z-index: -1;
+ visibility: hidden;
+ opacity: 0;
+ transition: .5s;
+}
+.price-heading{
+    border-bottom: 1px solid #ddd;
+    border-width: -5px;
+    width: 150px;
+    margin: auto;
+    padding-bottom: 50px;
+    transition: 1.5s;
+}
+.price-heading h6{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.prices span{
+    font-size: 40px;
+}
+.prices h1{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* =========BannerSection+====== */
+.banner{
+    background: url(https://i.ibb.co/hZx6CK7/free-bg.jpg) no-repeat center center;
+    background-size: cover;
+position: relative;
+padding: 100px;
+z-index: 1;
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(55,99,233,.9) ;
+    z-index: -1;
+}
+
+.banner-caption{}
+.banner-caption h6{
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.banner-caption h1{
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+}
+.banner-caption h1::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 45%;
+    height: 1px;
+    width: 50px;
+    background: #fff;
+}
+.banner-caption p {
+    font-weight: 600;
+    font-size: 15px;
+}
+.banner-btn{
+    margin-top: 20px;
+    padding: 13px 20px;
+    font-weight: 600;
+    color: #0d6efd !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner-btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #0d6efd;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: -1;
+}
+.banner-btn:hover{color: #fff !important;}
+.banner-btn:hover::after{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    
+}
+
+/* =======subscribe========= */
+.sub-form{
+    background: #3763eb;
+}
+.sub-form h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+.sub-form p{
+    /* padding: 0px 101px; */
+    /* padding-right: 221px; */
+    width: 310px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.sub-form form input{
+    border-radius: 50px;
+    border: none;
+    padding: 4px 10px;
+    width: 310px;
+    outline: none;
+}
+.sub-form form button{
+    /* background: #fff; */
+    border: 1px solid #fff;
+    font-weight: 700;
+    color: #fff !important;
+    margin-left: 20px;
+}
+
+/* faq */
+.faq{  
+    padding: 30px;
+    box-shadow: 5px 5px 11px 9px rgb(237 237 237);
+}
+.faq h4{
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 90px;
+}
+.faq-btn{}
